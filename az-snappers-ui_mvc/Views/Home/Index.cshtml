@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Are you ready for your new House?</h1>
+    <p>Welcome to AR experience coupled with Amazing Banking experince</p>
+    
+    <script type="text/javascript">
+
+        (function () {
+            var div = document.createElement("div");
+            document.getElementsByTagName('body')[0].appendChild(div);
+            div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: orangered; right: 0;'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer; background-color: orangered;'></div><iframe width='400px' height='600px' src='https://webchat.botframework.com/embed/az-snapper-qnaservice-bot?s=lUZ5sl8_qpk.SdoZc13jeGQE37K0kQGF0gdyPK7UrECxgsEm2lFMxu8'></iframe></div>";
+
+            document.querySelector('body').addEventListener('click', function (e) {
+                e.target.matches = e.target.matches || e.target.msMatchesSelector;
+                if (e.target.matches('#botTitleBar')) {
+                    var botDiv = document.querySelector('#botDiv');
+                    botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+                };
+            });
+        }());
+
+    </script>
+    
+</div>
