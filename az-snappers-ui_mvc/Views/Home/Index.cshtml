@@ -7,14 +7,36 @@
 }
 
 
-<div class="text-center">
-    <h1 class="display-4">Are you ready for your new House?</h1>
-    <p>Welcome to AR experience coupled with Amazing Banking experince</p>
-
+<div>
     @{
         var property = ViewBag.Message;
     }
+    <div>
+        <table>
+            <tr>
+                <td style="text-align:left;font-size:36px;resize:horizontal">
+                    $@property.Price
+                <td>
 
+                <td class="td-price">
+                     @property.bed bd
+                </td>
+                <td class="td-price">
+                    @property.bed bath
+                </td>
+                <td class="td-price">
+                    @property.bed sqft
+                </td>
+            <tr>
+            <tr>
+                <td class="td-price">
+                    @property.Address 
+                </td>
+            </tr>
+        </table>
+        @*<div style="text-align:left;font-size:36px;">$@property.Price</div><div>@property.bed bd</div><div>@property.bath bath</div><div>@property.area sqft</div>
+            <div>@property.Address</div>*@
+    </div>
     <div class="container py-4">
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -24,9 +46,9 @@
                 }
                 @foreach (var item in property.ImageUrls)
                 {
-                    <div class="carousel-item @(first?Html.Raw("active"):Html.Raw(""))">
-                        <img class="d-block w-100" src="@item" alt="@item">
-                    </div>
+                <div class="carousel-item @(first?Html.Raw("active"):Html.Raw(""))">
+                    <img class="d-block w-100" src="@item" alt="@item">
+                </div>
                     first = false;
                 }
             </div>
