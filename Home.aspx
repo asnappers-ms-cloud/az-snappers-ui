@@ -27,84 +27,108 @@
                 </div>
 
             </div>
+            <div id="centralPage" class="centralPage">
 
+                <div id="detailDiv" class="grid-container main-con">
 
-            <div id="detailDiv" class="grid-container main-con">
-
-                <div>
                     <div>
-                        <asp:Table ID="Table1" runat="server">
-                            <asp:TableRow>
-                                <asp:TableCell CssClass="priceCell">
-                                    <asp:Label ID="lblPrice" runat="server" Text="ABC"></asp:Label>
-                                </asp:TableCell>
-                                <asp:TableCell CssClass="tblCell">
-                                    <asp:Label ID="lblBed" runat="server" Text="Bed"></asp:Label>
-                                </asp:TableCell>
-                                <asp:TableCell CssClass="tblCell">
-                                    <asp:Label ID="lblBath" runat="server" Text="Bath"></asp:Label>
-                                </asp:TableCell>
-                                <asp:TableCell CssClass="tblCell">
-                                    <asp:Label ID="lblSqFt" runat="server" Text="SqFt"></asp:Label>
-                                </asp:TableCell>
-                            </asp:TableRow>
+                        <div>
+                            <asp:Table ID="Table1" runat="server">
+                                <asp:TableRow>
+                                    <asp:TableCell CssClass="priceCell">
+                                        <asp:Label ID="lblPrice" runat="server" Text="ABC"></asp:Label>
+                                    </asp:TableCell>
+                                    <asp:TableCell CssClass="tblCell">
+                                        <asp:Label ID="lblBed" runat="server" Text="Bed"></asp:Label>
+                                    </asp:TableCell>
+                                    <asp:TableCell CssClass="tblCell">
+                                        <asp:Label ID="lblBath" runat="server" Text="Bath"></asp:Label>
+                                    </asp:TableCell>
+                                    <asp:TableCell CssClass="tblCell">
+                                        <asp:Label ID="lblSqFt" runat="server" Text="SqFt"></asp:Label>
+                                    </asp:TableCell>
+                                </asp:TableRow>
 
-                        </asp:Table>
-                        <asp:Table runat="server">
-                            <asp:TableRow>
-                                <asp:TableCell CssClass="addressCell">
-                                    <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
+                            </asp:Table>
+                            <asp:Table runat="server">
+                                <asp:TableRow>
+                                    <asp:TableCell CssClass="addressCell">
+                                        <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                            </asp:Table>
 
-                    </div>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <asp:Repeater ID="rptGallery" runat="server">
-                                <ItemTemplate>
-                                    <div class="carousel-item  <%# (Container.ItemIndex == 0? "active": "")%>">
-                                        <img src="<%# Eval("Name").ToString() %>" class="d-block w-100" alt="..." />
-                                    </div>
-                                </ItemTemplate>
-                            </asp:Repeater>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <asp:Repeater ID="rptGallery" runat="server">
+                                    <ItemTemplate>
+                                        <div class="carousel-item  <%# (Container.ItemIndex == 0? "active": "")%>">
+                                            <img src="<%# Eval("Name").ToString() %>" class="d-block w-100" alt="..." />
+                                        </div>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td class="priceCell">
+                                    <span>House Details
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Table ID="tblHouseDetails" runat="server">
+                                    </asp:Table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
                 </div>
-                <div>
-                    <table>
-                        <tr>
-                            <td class="priceCell">
-                                <span>
-                                    House Details
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <asp:Table ID="tblHouseDetails" runat="server">
 
-                                </asp:Table>
-                            </td>
-                        </tr>
-                    </table>
+                <div id="bottomDiv" class="grid-container">
+                    <div>
+                        <span class="priceCell">Goal Based Planing
+                        </span>
+                    </div>
+                    <div>
+                        <span class="priceCell">Genome Insignts</span>
+                    </div>
+
                 </div>
-
-            </div>
-
-            <div id="bottomDiv">
 
             </div>
 
         </div>
+        <script type="text/javascript">
+
+            (function () {
+                var div = document.createElement("div");
+                document.getElementsByTagName('body')[0].appendChild(div);
+                div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: orangered; right: 0;'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer; background-color: orangered;'></div><iframe width='400px' height='600px' src='https://webchat.botframework.com/embed/az-snapper-qnaservice-bot?s=lUZ5sl8_qpk.SdoZc13jeGQE37K0kQGF0gdyPK7UrECxgsEm2lFMxu8'></iframe></div>";
+
+                document.querySelector('body').addEventListener('click', function (e) {
+                    e.target.matches = e.target.matches || e.target.msMatchesSelector;
+                    if (e.target.matches('#botTitleBar')) {
+                        var botDiv = document.querySelector('#botDiv');
+                        botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+                    };
+                });
+            }());
+
+        </script>
     </form>
     <script src="js/bootstrap.min.js"></script>
 </body>
