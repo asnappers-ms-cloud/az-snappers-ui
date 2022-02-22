@@ -33,7 +33,7 @@
 
                     <div>
                         <div>
-                            <asp:Table ID="Table1" runat="server">
+                            <asp:Table ID="HeaderTable" runat="server">
                                 <asp:TableRow>
                                     <asp:TableCell CssClass="priceCell">
                                         <asp:Label ID="lblPrice" runat="server" Text="ABC"></asp:Label>
@@ -50,7 +50,7 @@
                                 </asp:TableRow>
 
                             </asp:Table>
-                            <asp:Table runat="server">
+                            <asp:Table runat="server" id="tblAddress">
                                 <asp:TableRow>
                                     <asp:TableCell CssClass="addressCell">
                                         <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
