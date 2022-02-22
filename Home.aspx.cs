@@ -1,4 +1,7 @@
-﻿using System;
+﻿using az_snappers_ui.DataAccess;
+using az_snappers_ui.Models;
+//using azure_snappers_sal.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,12 +18,46 @@ namespace az_snappers_ui
         {
             if (Page.IsPostBack == false)
             {
-                gallery.Add(new Img() { Name = "https://www.w3schools.com/bootstrap/la.jpg" });
-                gallery.Add(new Img() { Name = "https://www.w3schools.com/bootstrap/chicago.jpg" });
-                gallery.Add(new Img() { Name = "https://www.w3schools.com/bootstrap/ny.jpg" });
-                rptGallery.DataSource = gallery;
+                var res = getDetails();
+                setLabels(res);
+
+                //gallery.Add(new Img() { Name = "https://www.w3schools.com/bootstrap/la.jpg" });
+                //gallery.Add(new Img() { Name = "https://www.w3schools.com/bootstrap/chicago.jpg" });
+                //gallery.Add(new Img() { Name = "https://www.w3schools.com/bootstrap/ny.jpg" });
+                rptGallery.DataSource = getImageData(res);
                 rptGallery.DataBind();
             }
+        }
+
+        private static PlaceDetails getDetails()
+        {
+            var result = DataManager.GetDetails();
+            return result;
+        }
+
+        private void setLabels(PlaceDetails res)
+        {
+
+            lblPrice.Text = res.HouseCost.ToString();
+            lblAddress.Text = res.Address;
+            //lblSqFt.Text= res.
+
+        }
+
+        private static List<ImageData> getImageData(PlaceDetails res)
+        {
+            //var res = getDetails();
+            var imageUrls = res.ImageUrls;
+            if (imageUrls == null)
+            {
+                imageUrls = new List<ImageData>();
+            }
+            else
+            {
+                //Fix THis!
+
+            }
+            return imageUrls;
         }
 
         public class Img

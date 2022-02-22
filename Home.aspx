@@ -51,7 +51,7 @@
 
                         </asp:Table>
                         <asp:Table runat="server">
-                            <asp:TableRow>
+                            <asp:TableRow CssClass="addressCell">
                                 <asp:TableCell CssClass="addressCell">
                                     <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
                                 </asp:TableCell>
