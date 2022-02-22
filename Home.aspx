@@ -49,7 +49,6 @@
                                     </asp:TableCell>
                                 </asp:TableRow>
 
-
                         </asp:Table>
                         <asp:Table runat="server">
                             <asp:TableRow CssClass="addressCell">
@@ -58,15 +57,6 @@
                                 </asp:TableCell>
                             </asp:TableRow>
                         </asp:Table>
-                            </asp:Table>
-                            <asp:Table runat="server" id="tblAddress">
-                                <asp:TableRow>
-                                    <asp:TableCell CssClass="addressCell">
-                                        <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
-                                    </asp:TableCell>
-                                </asp:TableRow>
-                            </asp:Table>
-
 
                         </div>
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
