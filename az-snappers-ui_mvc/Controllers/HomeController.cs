@@ -20,6 +20,17 @@ namespace az_snappers_ui_mvc.Controllers
 
         public IActionResult Index()
         {
+            PropertyModel p  =  new PropertyModel()
+            {
+                Address = "3005 , merrywood dr, edison",
+                Id = 1,
+                ImageUrls = new List<string>() { "https://www.w3schools.com/bootstrap/la.jpg" ,"https://www.w3schools.com/bootstrap/chicago.jpg" ,"https://www.w3schools.com/bootstrap/ny.jpg" },
+                Latitude = "",
+                Longitude = "",
+                Zipcode = ""
+
+            };
+            ViewBag.Message = p;
             return View();
         }
 
