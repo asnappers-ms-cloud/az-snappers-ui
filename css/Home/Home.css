@@ -10,6 +10,12 @@
     height: 700px;
 }
 
+.centralPage {
+    padding: 50px;
+    width: 100%;
+    height: auto;
+}
+
 .top-con {
     background-color: cornflowerblue;
     padding: 20px;
