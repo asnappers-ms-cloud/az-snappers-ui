@@ -18,9 +18,10 @@ namespace az_snappers_ui_mvc.Controllers
 
         public IActionResult Details()
         {
-            var lstProperty = new List<Property>() { new Property { Id = "sdcasd", Address = "New Delhi, Delhi, Delhi" }, new Property { Id = "a22asd", Address = "3005 Merrywood Dr, EDison, NJ, 08817" }, new Property { Id = "jbj79", Address = "1 NYP, New York, 10004, USA" } };
-            //ViewBag.Message = lstProperty;
-            return View(lstProperty);
+            //var lstProperty = new List<Property>() { new Property { Id = "sdcasd", Address = "New Delhi, Delhi, Delhi" }, new Property { Id = "a22asd", Address = "3005 Merrywood Dr, EDison, NJ, 08817" }, new Property { Id = "jbj79", Address = "1 NYP, New York, 10004, USA" } };
+            ////ViewBag.Message = lstProperty;
+            //return View(lstProperty);
+            return Redirect("~/");
         }
 
 
