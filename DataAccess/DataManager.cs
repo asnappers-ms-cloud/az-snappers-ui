@@ -43,7 +43,11 @@ namespace az_snappers_ui.DataAccess
                 SchoolDetails = hd.SchoolDetails,
                 SchoolRating = hd.SchoolRating,
                 ShoppingDetails = hd.ShoppingDetails,
-                Zipcode = hd.Zipcode
+                Zipcode = hd.Zipcode,
+                LivingAreaSqFt = hd.LivingAreaSqFt,
+                NumberOfBath = hd.NumberOfBath,
+                NumberOfBeds = hd.NumberOfBeds,
+                TotalAreaSqFt = hd.TotalAreaSqFt
             };
 
             var ImageUrls = new List<ImageData>();

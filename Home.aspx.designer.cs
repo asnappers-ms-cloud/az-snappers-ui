@@ -69,15 +69,6 @@ namespace az_snappers_ui
         protected global::System.Web.UI.WebControls.Label lblSqFt;
 
         /// <summary>
-        /// tblAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tblAddress;
-
-        /// <summary>
         /// lblAddress control.
         /// </summary>
         /// <remarks>
@@ -96,12 +87,39 @@ namespace az_snappers_ui
         protected global::System.Web.UI.WebControls.Repeater rptGallery;
 
         /// <summary>
-        /// tblHouseDetails control.
+        /// lblLotSize control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tblHouseDetails;
+        protected global::System.Web.UI.WebControls.Label lblLotSize;
+
+        /// <summary>
+        /// lblSchoolRating control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSchoolRating;
+
+        /// <summary>
+        /// lblShopping control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblShopping;
+
+        /// <summary>
+        /// lblSafetyRating control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSafetyRating;
     }
 }

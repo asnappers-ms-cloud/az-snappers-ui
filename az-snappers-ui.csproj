@@ -105,7 +105,6 @@
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -149,7 +148,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\azure-snappers-sal\azure-snappers-sal.csproj">
+    <ProjectReference Include="azure-snappers-sal\azure-snappers-sal.csproj">
       <Project>{8da46c65-1e1a-4e80-bb30-537048051a4f}</Project>
       <Name>azure-snappers-sal</Name>
     </ProjectReference>

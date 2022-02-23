@@ -89,8 +89,40 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:Table ID="tblHouseDetails" runat="server">
-                                    </asp:Table>
+                                    <table id="tblHouseDetails">
+                                        <tr>
+                                            <td>
+                                                <span>Lot Size</span>
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblLotSize" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>School Rating</span>
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblSchoolRating" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Shopping Details</span>
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblShopping" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Safety Rating</span>
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblSafetyRating" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
                         </table>

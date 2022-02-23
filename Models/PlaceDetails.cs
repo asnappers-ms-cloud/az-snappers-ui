@@ -26,5 +26,10 @@ namespace az_snappers_ui.Models
         internal bool IsPreapproved { get; set; }
         internal string APR { get; set; }
         internal string DisplayName { get; set; }
+
+        internal float NumberOfBeds { get; set; }
+        internal float NumberOfBath { get; set; }
+        internal float LivingAreaSqFt { get; set; }
+        internal float TotalAreaSqFt { get; set; }
     }
 }

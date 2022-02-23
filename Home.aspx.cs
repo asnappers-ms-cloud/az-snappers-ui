@@ -40,8 +40,15 @@ namespace az_snappers_ui
 
             lblPrice.Text = res.HouseCost.ToString();
             lblAddress.Text = res.Address;
-            //lblSqFt.Text= res.
+            lblSqFt.Text = res.LivingAreaSqFt.ToString();
+            lblBath.Text = res.NumberOfBath.ToString();
+            lblBed.Text = res.NumberOfBeds.ToString();
 
+            lblLotSize.Text = res.TotalAreaSqFt.ToString();
+
+            lblSchoolRating.Text = res.SchoolRating.ToString();
+            lblShopping.Text = res.ShoppingDetails;
+            lblSafetyRating.Text = res.SafetyRating.ToString();
         }
 
         private static List<ImageData> getImageData(PlaceDetails res)
@@ -50,6 +57,7 @@ namespace az_snappers_ui
             var imageUrls = res.ImageUrls;
             if (imageUrls == null)
             {
+                //Todo: Need to make a provison for showing some default 'Image not found' image in this case.
                 imageUrls = new List<ImageData>();
             }
             else
