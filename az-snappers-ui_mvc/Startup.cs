@@ -46,7 +46,7 @@ namespace az_snappers_ui_mvc
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Property}/{action=Index}/{id?}");
             });
         }
     }

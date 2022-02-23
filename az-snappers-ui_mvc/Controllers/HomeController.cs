@@ -23,7 +23,7 @@ namespace az_snappers_ui_mvc.Controllers
             Property p = new Property()
             {
                 Address = "3005 , merrywood dr, edison",
-                Id = "sdke67",
+                Id = 8,
                 ImageUrls = new List<string>() { "https://www.w3schools.com/bootstrap/la.jpg", "https://www.w3schools.com/bootstrap/chicago.jpg", "https://www.w3schools.com/bootstrap/ny.jpg" },
                 Latitude = "",
                 Longitude = "",
