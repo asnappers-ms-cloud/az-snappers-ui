@@ -33,30 +33,30 @@
 
                     <div>
                         <div>
-                            <asp:Table ID="HeaderTable" runat="server">
-                                <asp:TableRow>
-                                    <asp:TableCell CssClass="priceCell">
+                            <table id="HeaderTable">
+                                <tr>
+                                    <td class="priceCell">
                                         <asp:Label ID="lblPrice" runat="server" Text="ABC"></asp:Label>
-                                    </asp:TableCell>
-                                    <asp:TableCell CssClass="tblCell">
+                                    </td>
+                                    <td class="tblCell">
                                         <asp:Label ID="lblBed" runat="server" Text="Bed"></asp:Label>
-                                    </asp:TableCell>
-                                    <asp:TableCell CssClass="tblCell">
+                                    </td>
+                                    <td class="tblCell">
                                         <asp:Label ID="lblBath" runat="server" Text="Bath"></asp:Label>
-                                    </asp:TableCell>
-                                    <asp:TableCell CssClass="tblCell">
+                                    </td>
+                                    <td class="tblCell" style="width: 100px;">
                                         <asp:Label ID="lblSqFt" runat="server" Text="SqFt"></asp:Label>
-                                    </asp:TableCell>
-                                </asp:TableRow>
+                                    </td>
+                                </tr>
 
-                        </asp:Table>
-                        <asp:Table runat="server">
-                            <asp:TableRow CssClass="addressCell">
-                                <asp:TableCell CssClass="addressCell">
-                                    <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
+                            </table>
+                            <table>
+                                <tr class="addressCell">
+                                    <td class="addressCell">
+                                        <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
 
                         </div>
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">

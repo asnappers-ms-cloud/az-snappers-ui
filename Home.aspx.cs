@@ -38,11 +38,11 @@ namespace az_snappers_ui
         private void setLabels(PlaceDetails res)
         {
 
-            lblPrice.Text = res.HouseCost.ToString();
+            lblPrice.Text = "$"+res.HouseCost.ToString();
             lblAddress.Text = res.Address;
-            lblSqFt.Text = res.LivingAreaSqFt.ToString();
-            lblBath.Text = res.NumberOfBath.ToString();
-            lblBed.Text = res.NumberOfBeds.ToString();
+            lblSqFt.Text = res.LivingAreaSqFt.ToString()+" sqft";
+            lblBath.Text = res.NumberOfBath.ToString()+ " Bath";
+            lblBed.Text = res.NumberOfBeds.ToString()+" Bed";
 
             lblLotSize.Text = res.TotalAreaSqFt.ToString();
 
